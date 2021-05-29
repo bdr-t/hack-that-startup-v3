@@ -9,8 +9,8 @@ describe('Login component', () => {
         render(<Login/>)
     })
 
-    it('aparece el texto del labal "Introduzca su nombre de usuario de Github:"', ()=>{
-        expect(container.getByLabelText('Introduzca su nombre de usuario de Github:')).not.toBe(null);
+    it('aparece el texto del labal "Introduzca un nombre de usuario de Github:"', ()=>{
+        expect(container.getByLabelText('Introduzca un nombre de usuario de Github:')).not.toBe(null);
     })
 
     it('aprece correctament el placeholder del input', ()=>{
