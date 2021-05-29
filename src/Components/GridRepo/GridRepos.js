@@ -1,5 +1,4 @@
 import useFetch from '../../Hooks/useFetch';
-import Login from '../Login/Login';
 import { Grid } from './GridRepos.style';
 import Repo from './Repo/Repo';
 import { useHistory } from 'react-router-dom'
@@ -10,7 +9,7 @@ const GridRepos = ({ name }) => {
 
   let content 
 
-  console.log(error)
+
   // if(status === 'loading') content = 'loading'
   if(error) {
     history.push('/notFound')
@@ -21,7 +20,7 @@ const GridRepos = ({ name }) => {
 
   if(data){
     content = data.map(element=>{
-        return <Repo enlace={element.html_url}name={element.name}  watchers={element.watchers} forks={element.forks} language={element.language}/>
+        return <Repo key={element.id} enlace={element.html_url}name={element.name}  watchers={element.watchers} forks={element.forks} language={element.language}/>
 
     })
 

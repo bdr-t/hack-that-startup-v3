@@ -6,7 +6,6 @@ import UserFooter from './UserFooter/UserFooter';
 
 const User = ({ name }) => {
   const { data, status, error } = useFetch(`https://api.github.com/users/${name}`);
-  console.log(data);
   return (
     <StickyDiv>
       {data && (
