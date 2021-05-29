@@ -5,6 +5,7 @@ import { CgWebsite } from 'react-icons/cg';
 import { CgWorkAlt } from 'react-icons/cg';
 
 const Lista = ({ location, email, company, repos, blog }) => {
+  // renderiza lista de informacion
   return (
     <Flex>
       {/* <p>{repos} repositories</p> */}

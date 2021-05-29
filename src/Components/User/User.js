@@ -5,9 +5,13 @@ import { UserContainer, StickyDiv } from './User.style';
 import UserFooter from './UserFooter/UserFooter';
 
 const User = ({ name }) => {
+  //componente que rendeiz el Perfil del usuario buscado
+
+  //se utiliza el customHook par hacer el fetch
   const { data, status, error } = useFetch(`https://api.github.com/users/${name}`);
   return (
     <StickyDiv>
+      {/* esperará a que se obtenga data para renderizar */}
       {data && (
         <UserContainer>
           <img src={data.avatar_url} alt="" width="150px" />

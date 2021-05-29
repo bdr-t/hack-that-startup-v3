@@ -1,3 +1,4 @@
+// tema del proyecto
 export const darkTheme = {
   text: 'white',
   primary: '#374151',

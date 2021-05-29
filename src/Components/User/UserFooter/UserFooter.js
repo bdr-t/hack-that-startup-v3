@@ -1,6 +1,7 @@
 import { Flex } from "./UserFooter.styled";
 
 const UserFooter = ({ followers, following }) => {
+  //renderiza seguidores y seguidos
     return (
       <Flex>
         <p>{followers} followers</p>
